@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .overall-container{
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .outerpage-container{
+    border:11px solid black;
+    width: 25%;
+    height: 85%;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  .headerpage{
+    border: 1px solid black;
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#008000;
+    color: white; 
+    padding: 10px;
+  }
+  
+  .nameicon-container{
+    width: 40%;
+    height: 90%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .icons-container{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  span{
+    font-size: 20px;
+  }
+  
+  .circle-container{
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    border-radius:50px ;
+  }
+  
+  .name-container{
+    color: white;
+    width: 40%;
+    height: 40%;
+    font-size: 18px;
+  }
+  
+  .dropdown-wrapper {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 20px;
+    right: -13px;
+    background-color: white;
+    border-radius: 6px;
+    z-index: 5;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+  }
+  .dropdown-wrapper button{
+    border: none;
+    outline: none;
+    background-color:#008000;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+  }
+  .dropdown-menu button{
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  .dropdown-item {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+  }
+   
+
+  .input-container{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    gap:8px;
+  }
+  
+  .input-container input{
+    height: 35px;
+    width:30vw;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    
+  }
+  
+  .input-container button{
+    border: none;
+    background-color: white;
+    font-size: 23px;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+  .chat-box{
+    padding-top: 10px;
+    height: 79%;
+    overflow-y: auto;
+    background-color: antiquewhite;
+  }
+
+  .image-preview{
+    width: 100%;
+    height: 50px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .preview-image{
+    width: 60px;
+    height: 40px;
+    object-fit:fill;
+    z-index: 3;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+
+  .message-box{
+    max-width: 60%;
+    width:fit-content;
+    background-color:white;
+    color: black;
+    word-wrap:break-word;
+    white-space: normal;
+    margin: 18px 10px 10px auto;
+    border-radius: 10px;
+    padding: 6px;
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    min-width: 10%;
+  }
+ 
+
+  .image-box{
+    margin: 20px 10px 0px auto;
+    width: 60%;
+    position: relative;
+  }
+
+  .image-box:hover .icon-container{
+    display: flex;
+  }
+  
+  .msg-edit{
+    font-size: 14px;
+    padding: 4px;
+    
+  }
+
+  .icon-container{
+    position: absolute;
+    top:-16px;
+    right: 5px;
+    display: none; 
+  }
+
+  .message-box:hover .icon-container{
+    display: flex;
+    gap:5px;
+  }
+
+
+  .msg-image {
+    width: 100%;
+    height: 100%;
+    border:2px solid black;
+    border-radius: 10px;
+  } 
+
+  .msg-edit[contenteditable="true"] {
+    outline:none;
+    background-color:white;
+  }
+
+  .edit-icon, .delete-icon, .action-icon{
+    color: black;
+  }
+
+  .start-conversation{
+    padding: 4px;
+    font-size: 16px;
+    margin-top: 95%;
+    text-align: center;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+  }
+
+  
